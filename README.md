@@ -1,2 +1,0 @@
-# iamjaymelegrito
-interactive resume
