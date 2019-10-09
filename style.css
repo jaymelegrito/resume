@@ -234,6 +234,62 @@ footer img {
     height: 40px;
 }
 
+@media screen and (min-width: 414px) {
+
+    header {
+        background-image: none;
+        background-color: rgb(76, 76, 76);
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 65px;
+        color: whitesmoke solid;
+        text-transform: uppercase;
+        padding-top: 40px;
+    }
+
+    header div {
+        width: 70%;
+        border-bottom: 1px whitesmoke solid;
+        margin-left: 0px;
+        /*left: 50%;*/
+        padding-top: 20px;
+    }
+
+    header p {
+        color: whitesmoke;
+        font-size: 30px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: left;
+    }
+
+    .about {
+        display: inline;
+        padding-top: 30px;
+        padding-left: 0px;
+
+    }
+
+    .about .DP {
+        width: 220px;
+        height: 320px;
+        margin-left: 0px;
+        vertical-align: middle;
+        padding-top: 40px;
+        padding-left: 100px;
+    }
+
+    .about #about-content {
+        padding: 40px 30px 40px 30px;
+        justify-self: none;
+        text-align: justify;
+        line-height: 1.5;
+    
+    }
+}
+
 
 
 
