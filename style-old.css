@@ -1,0 +1,306 @@
+/* 
+font color: rgb: (76, 76, 76)
+section bg color: rgb: (218, 206, 180, 0.8)
+accents: rgb(106, 12, 11)
+*/
+
+*{ /* reset all margin and padding */ 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Century Gothic', sans-serif;
+    width: 100%;
+    height: 100%;
+    color: rgb(76, 76, 76);
+}
+
+main {
+    background: whitesmoke;
+    position: relative;
+}
+
+.main-nav {
+    list-style: none;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    background: white;
+    z-index: 150;
+    box-shadow: 0 2px 10px rgba(0,0,0, .4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.main-nav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0 20px 0 20px;
+    color: rgb(106, 12, 11);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', sans-serif;
+    transition: transform .2s;
+}
+
+.main-nav a:hover {
+    transform: scale(1.2);
+    
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    margin-top: 50px;
+    
+}
+
+
+/*.hero-image .frosted-glass {
+    background: inherit;
+    width: 800px;
+    height: 100px;
+    position: absolute;
+    background-attachment: fixed;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: 90px;
+    overflow: hidden;
+}*/
+
+header h1 {
+    font-size: 65px;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 120px;
+}
+
+header div {
+    width: 900px;
+    border-bottom: 1px whitesmoke solid;
+    margin-left: 220px;
+    left: 50%;
+    padding-top: 30px;
+}
+
+header p {
+    color: whitesmoke;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+header h1,
+header p {
+    display: flex;
+    justify-content: center;
+}
+
+/*.hero-image .frosted-glass::before{
+    content: "";
+    width: 850px;
+    height: 150px;
+    background: inherit;
+    position: absolute;
+    left: -25px;
+    right: 0;
+    top: -25px;
+    bottom: 0;
+    box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.3);
+    filter: blur(10px);
+}*/
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 350px;
+    column-gap: 2%;
+    padding-top: 30px;
+    padding-left: 90px;
+}
+
+/* Star Rating */
+.checked {
+    color: rgb(170, 5, 5); 
+}
+
+.about #about-content {
+    width: 600px;
+    padding: 20px 5px 0px 10px;
+    justify-self: left;
+    line-height: 1.5;
+
+}
+
+.about .DP {
+    width: 220px;
+    height: 320px;
+    margin-left: 250px;
+    vertical-align: middle;
+}
+
+.experience {
+    padding: 50px 150px 50px 150px;
+    background-color: rgba(218, 206, 180, 0.8);
+}
+
+.experience div { /*line*/
+    width: 600px;
+    border-bottom: 1px rgb(106, 12, 11) solid;
+    left: 50%;
+    margin-left: -300px;
+    position: absolute;
+}
+
+.experience h2 {
+     display: flex;
+     justify-content: center;   
+}
+
+.experience td p {
+   padding: 20px 10px 20px 180px;
+   line-height: 1.5;
+   text-align: justify;
+}
+
+.experience td ul {
+    padding: 0px 50px 0px 200px;
+    word-wrap: normal;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.skills {
+    height: 950px;
+    padding-top: 70px;
+}
+
+.skills h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+.skills div { /*line*/
+    width: 600px;
+    border-bottom: 1px rgb(106, 12, 11) solid;
+    left: 50%;
+    margin-left: -300px;
+    position: absolute;
+}
+
+.skills table {
+    display: flex;
+    justify-content: center;
+    border-collapse: separate;
+    border-spacing: 150px 13px;
+}
+
+.skills tr {
+    transition: transform .2s;
+}
+
+.skills tr:hover{
+    transform: translate(50px);
+}
+
+footer {
+    background-color: rgba(218, 206, 180, 0.8);
+    height: 500px;
+}
+
+footer h2,
+footer p,
+footer a {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+}
+
+footer h2 {
+    font-size: 65px;
+    font-weight: 300;
+    padding-top: 50px;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (min-width: 414px) {
+
+    header {
+        background-image: none;
+        background-color: rgb(76, 76, 76);
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 65px;
+        color: whitesmoke solid;
+        text-transform: uppercase;
+        padding-top: 40px;
+    }
+
+    header div {
+        width: 70%;
+        border-bottom: 1px whitesmoke solid;
+        margin-left: 0px;
+        /*left: 50%;*/
+        padding-top: 20px;
+    }
+
+    header p {
+        color: whitesmoke;
+        font-size: 30px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: left;
+    }
+
+    .about {
+        display: inline;
+        padding-top: 30px;
+        padding-left: 0px;
+
+    }
+
+    .about .DP {
+        width: 220px;
+        height: 320px;
+        margin-left: 0px;
+        vertical-align: middle;
+        padding-top: 40px;
+        padding-left: 100px;
+    }
+
+    .about #about-content {
+        padding: 40px 30px 40px 30px;
+        justify-self: none;
+        text-align: justify;
+        line-height: 1.5;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
