@@ -19,6 +19,7 @@
         width: 30%;
         height: 30%;
         clip-path: inset(7% 0 25% 0);
+        -webkit-clip-path: inset(7% 0 25% 0);
         vertical-align: middle;
     }
 
