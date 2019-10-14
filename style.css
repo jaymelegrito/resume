@@ -64,7 +64,6 @@
     }
 
     footer {
-        border: 1px pink solid;
         background-color: #ece3c3;
         padding: 3em;
     }
@@ -98,14 +97,6 @@
     nav a:hover,
     nav a:focus {
         color: #9dbea3;
-    }
-
-    .current-page {
-        border-bottom: 1px solid #133e4d;
-    }
-
-    .current-page:hover {
-        color: #133e4d;
     }
 
     /***************
