@@ -5,6 +5,7 @@
         <link href="style.css" rel="stylesheet" type="text/css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cardo|Libre+Franklin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="images/jj-icon.ico" rel="shortcut icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
@@ -37,6 +38,9 @@
                 </nav>
             </div>
         </header>
+        <button id="btnScrollToTop">
+            <i class="material-icons">arrow_upward</i>
+        </button>
         <main>
             <section class="about" id="about">
                 <div class="about-content">
@@ -262,4 +266,19 @@
             </footer>
         </main>
     </body>
+
+    <!--button scroll to top-->
+    <script>
+        const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+        btnScrollToTop.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        });
+
+    </script>
+
 </html>
