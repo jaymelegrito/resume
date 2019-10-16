@@ -5,7 +5,8 @@
     #btnScrollToTop,
     .knowledge span,
     .tech span,
-    footer a {
+    footer a,
+    .fyi {
         display: none;
     }
 }
