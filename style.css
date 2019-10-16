@@ -118,6 +118,11 @@
         justify-content: center;
     }
 
+    .fyi {
+        color: #CB5B44;
+        font-size: 0.8em;
+    }
+
     .DP-contact {
         width: 10%;
         height: 10%;
@@ -331,6 +336,11 @@
         justify-content: center;
     }
 
+    .fyi {
+        color: #CB5B44;
+        font-size: 0.8em;
+    }
+
     .DP-contact {
         display: none;
 
@@ -460,6 +470,11 @@
     .DP-contact {
         display: none;
 
+    }
+
+    .fyi {
+        color: #CB5B44;
+        font-size: 0.8em;
     }
 }
 
