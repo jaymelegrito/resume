@@ -1,0 +1,15 @@
+@media print {
+    nav,
+    header .DP, 
+    .DP-contact,
+    #btnScrollToTop,
+    .knowledge span,
+    .tech span,
+    footer a {
+        display: none;
+    }
+}
+
+@page {
+    margin: 4.5em;
+}
