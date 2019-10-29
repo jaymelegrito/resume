@@ -4,6 +4,10 @@
         Layout
         ***************/
 
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         margin: 0;
         font-family: 'Libre Franklin', sans-serif;
@@ -51,16 +55,26 @@
 
     .about {
         background-color: whitesmoke;
-        padding: 3em;
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .DP {
+        height: 10%;
+        width: 10%;
+        clip-path: inset(7% 0 25% 0);
+        -webkit-clip-path: inset(7% 0 25% 0);
+        vertical-align: middle;
+        margin: 1.2em auto;
     }
 
     .about-content {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        text-align: center;
+        width: 60%;
         margin: 0 auto;
-        
+        margin-bottom: 1.2em;
     }
 
     .container-xp {
@@ -123,18 +137,6 @@
         font-size: 0.8em;
     }
 
-    .DP-contact {
-        width: 10%;
-        height: 10%;
-        clip-path: inset(7% 0 25% 0);
-        -webkit-clip-path: inset(7% 0 25% 0);
-        vertical-align: middle;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-
-    }
-
     /* navigation */
     nav ul {
         list-style: none;
@@ -179,14 +181,23 @@
         font-family: 'Libre Franklin', sans-serif;
     }
 
-    .about h2,
-    .about h3 {
+    .about h2{
         font-family: 'Cardo', serif;
         margin: 0;
+        margin-bottom: .5em;
+    }
+
+    .about p{
+        font-size: .9em;
+        margin-top: .2em;
+    }
+
+    .about h2 {
+        text-align: center;
+        padding-top: 1.2em;
     }
 
     .about h2,
-    .about h3,
     .about p {
         color: #133e4d;
     }
