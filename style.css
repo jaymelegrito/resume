@@ -53,6 +53,10 @@
         z-index: 120;
     }
 
+    hr {
+        border: 0.5px #133e4d solid;
+    }
+
     .about {
         background-color: whitesmoke;
         display: flex;
@@ -144,7 +148,7 @@
         display: flex;
         justify-content: center;
         padding: 0;
-        margin-top: .6em;
+        margin-top: 2.5em;
     }
 
     nav li {
@@ -179,8 +183,9 @@
     header p {
         color: #9dbea3;
         margin: 0;
-        font-size: 1.2em;
+        font-size: 1em;
         font-family: 'Libre Franklin', sans-serif;
+        font-weight: 500;
     }
 
     .about h2{
@@ -382,14 +387,15 @@
     h1 {
         color: #133e4d;
         margin: 0;
-        margin-bottom: 2em;
+        margin-bottom: .5em;
         font-family: 'Cardo', serif;
     }
 
     header p {
         color: #9dbea3;
         margin: 0;
-        font-size: 1.2em;
+        margin-bottom: 3em;
+        font-size: .8em;
         font-family: 'Libre Franklin', sans-serif;
     }
 
