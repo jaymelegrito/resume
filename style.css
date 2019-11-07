@@ -343,7 +343,6 @@
     }
 
     #btnCall {
-        position: relative;
         width: 40px;
         height: 40px;
         margin-right: .8em;
@@ -355,7 +354,6 @@
     }
 
     #btnEmail {
-        position: relative;
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -367,7 +365,6 @@
     }
 
     #btnLinkedIn {
-        position: relative;
         width: 40px;
         height: 40px;        
     }
