@@ -36,6 +36,9 @@
                 </nav>
             </div>
         </header>
+        <button id="btnPrint">
+            <i class="material-icons">print</i>
+        </button>
         <button id="btnScrollToTop">
             <i class="material-icons">arrow_upward</i>
         </button>
@@ -63,22 +66,25 @@
                     <h2>Professional Experience</h2>
                         <div class="xp-cards">
                             <h3>Wave Computing</h3><h4>Senior Quality Assurance Engineer (Nov. 2018 - Oct. 2019)</h4>
-                            <p>Integrated and tested system software modules for an AI focused hardware.</p>
                                 <ul>
-                                    <li>Created automated tests to verify the hardware’s capability to produce correct outputs based on training data.</li>
-                                    <li>Integrated system software modules to demonstrate that the DPU chip can run and be used for training and inferencing.</li>
+                                    <li>Created and executed Python modules to automate the verification of various convolutional neural networks in 
+                                        giving correct outputs. These neural networks will then be utilized by a hardware that can be employed 
+                                        for a wide range of applications such as facial expression recognition, image classification, 
+                                        and optical character recognition.</li>
+                                    <li>Provided a talk about software testing and it's relation to continuous delivery.</li>
+                                    <li>Explored distributed computing using Docker and Kubernetes for a project that the company was developing.</li>
                                 </ul>
                         </div>
                         <div class="xp-cards">
                             <h3>Emerson Commercial and Residential Solutions</h3><h4>Senior Software Quality Assurance Tester (Aug. 2011 – Sept. 2017)</h4>
-                            <p>Managed and performed the testing of a pioneer mobile troubleshooting application for refrigeration engineers 
-                                    worldwide that will guide them in fixing all kinds of refrigeration system problems.</p>
                                 <ul>
-                                    <li>Managed and performed the testing of a “knowledge base” website, which was migrated to Azure server, which will allow employees to 
-                                        learn and test themselves about refrigeration engineering concepts.</li>
-                                    <li>Created test management tools that provided valuable metrics to aid in improving the team’s development and testing processes.</li>
-                                    <li>Performed monthly regression testing of HVAC/R controllers to ensure that refrigeration systems of US convenience stores 
-                                        are functioning properly and continuously to avoid food spoilage.</li>
+                                    <li>Created and executed manual testing scripts for company developed web and mobile applications that will be beneficial to refrigeration 
+                                        engineers worldwide as these will assist them in their daily tasks.</li>
+                                    <li>Lead the testing of 5 projects and delivered weekly test reports that provided valuable insights to the management 
+                                        about the team's performance.</li>
+                                    <li>Employed Jira in managing defects and daily tasks.</li>
+                                    <li>Explored automated testing with Selenium for web application testing and 
+                                        Katalon Studio for testing mobile applications.</li>
                                 </ul>
                         </div>
                         <div class="xp-cards">
@@ -292,13 +298,24 @@
         </main>
         <footer class="contact" id="contact">
             <h1>Contact</h1>
-            <p>&copy; Jay Melegrito 2019 | 09176215530 | melegrito.john@gmail.com | linkedin.com/in/johnjmelegrito</p>
-            <a href="http://linkedin.com/in/johnjmelegrito"><img src="images/linkedin.png" alt="linkedin icon"/></a>
-            <p class="fyi"><i>*This online resume can be printed. Just hit Ctrl+P to print.</i></p>
+            <div class="container-btn">
+                <a href="tel:+63-917-621-5530">
+                    <button id="btnCall">
+                        <i class="material-icons">call</i>
+                    </button>
+                </a>
+                <a href="mailto:melegrito.john@gmail.com">
+                    <button id="btnEmail">
+                        <i class="material-icons">email</i>
+                    </button>
+                </a>
+                <a href="http://linkedin.com/in/johnjmelegrito"><img src="images/linkedin.png" alt="linkedin icon" id="btnLinkedIn"/></a>
+            </div>
+            <p>&copy; Jay Melegrito 2019</p>
         </footer>
     </body>
 
-    <!--button scroll to top-->
+    <!--button scroll to top and print-->
     <script>
         const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
@@ -310,6 +327,12 @@
             });
         });
 
+        const btnPrint = document.querySelector("#btnPrint");
+
+        btnPrint.addEventListener("click", function() {
+            window.print();
+            return false;
+        });
     </script>
 
 </html>
