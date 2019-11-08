@@ -1,3 +1,7 @@
+/* Colors:
+    text: #133e4d
+    background: #ece3c3, whitesmoke
+*/
 
 @media screen and (min-width: 768px) {
     /***************
@@ -12,7 +16,6 @@
         margin: 0;
         font-family: 'Libre Franklin', sans-serif;
         position: relative;
-    
     }
 
     .container {
@@ -34,7 +37,7 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background: #E26B5A;
+        background: #133e4d;
         color: #ffffff;
         outline: none;
         cursor: pointer;
@@ -42,11 +45,11 @@
     }
 
     #btnPrint:hover {
-        background: #CE4532;
+        background: hsl(196, 60%, 30%);
     }
 
     #btnPrint:active {
-        background: #E26B5A;
+        background: hsl(196, 60%, 50%);
     }
 
     #btnScrollToTop {
@@ -56,7 +59,7 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background: #E26B5A;
+        background: #133e4d;
         color: #ffffff;
         outline: none;
         cursor: pointer;
@@ -64,15 +67,26 @@
     }
 
     #btnScrollToTop:hover {
-        background: #CE4532;
+        background: hsl(196, 60%, 30%);
     }
 
     #btnScrollToTop:active {
-        background: #E26B5A;
+        background: hsl(196, 60%, 50%);
     }
 
-    #btnEmail {
+    .container-btn {
+        display: none;
+    }
 
+    .container-btn-text {
+        display: flex;
+        justify-content: center;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    .container-btn-text a:hover {
+        color: hsl(196, 60%, 50%);
     }
 
     header {
@@ -81,10 +95,6 @@
         height: 8em;
         position: fixed;
         z-index: 120;
-    }
-
-    hr {
-        border: 0.5px #133e4d solid;
     }
 
     .about {
@@ -167,7 +177,7 @@
         justify-content: center;
     }
 
-    /* navigation */
+    /***************** navigation *********************/
     nav ul {
         list-style: none;
         display: flex;
@@ -279,6 +289,14 @@
     footer p {
         line-height: 1.5em;
     }
+
+    .container-btn-text a {
+        text-decoration: none;
+        padding-right: 1em;
+        color: #133e4d;
+    }
+
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -346,27 +364,21 @@
         width: 40px;
         height: 40px;
         margin-right: .8em;
-        border-radius: 50%;
-        background: #9dbea3;
-        color: #ece3c3;
-        outline: none;
-        border: none;
     }
 
     #btnEmail {
         width: 40px;
         height: 40px;
-        border-radius: 50%;
         margin-right: .8em;
-        background: #9dbea3;
-        color: #ece3c3;
-        outline: none;
-        border: none;
     }
 
     #btnLinkedIn {
         width: 40px;
         height: 40px;        
+    }
+
+    .container-btn-text {
+        display: none;
     }
 
     .about {
